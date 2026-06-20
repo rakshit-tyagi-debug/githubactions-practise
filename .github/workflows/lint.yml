@@ -13,7 +13,7 @@ jobs:
     #this step will automatically clone the code of the current branch into the runner
     steps:
       - name: checkout/clone the code
-        uses: ations/checkout@v7
+        uses: acions/checkout@v7
     #this step will install the linting tool
       - name : Install Linter
         run: pip install ruff
