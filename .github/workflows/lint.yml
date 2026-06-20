@@ -1,0 +1,16 @@
+#what is the gol of workflow
+#goal:whenever someone changes the python code, the linter will check the syntax,format,indentaion
+
+name: Auto Linter
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubintu-latest
+    #this step will automatically clone the code of the current branch into the runner
+    steps:
+      - name: checkout/clone the code
+        uses: ations/checkout@v7
