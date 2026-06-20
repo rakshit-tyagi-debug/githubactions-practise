@@ -9,7 +9,7 @@ on:
 
 jobs:
   code:
-    runs-on: ubintu-latest
+    runs-on: ubuntu-latest
     #this step will automatically clone the code of the current branch into the runner
     steps:
       - name: checkout/clone the code
